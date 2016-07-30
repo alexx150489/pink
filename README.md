@@ -1,1 +1,1 @@
-# pink
+# pink-adaptive

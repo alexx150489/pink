@@ -1,0 +1,22 @@
+// переменные для шрифтов
+$font: "OpenSans", sans-serif;
+$font-bold: "OpenSans Bold", sans-serif;
+$font-light: "OpenSans Light", sans-serif;
+
+// переменные для текста(цвет)
+$base-text-color: #283645;
+$secondary-text-color: #ffffff;
+$alternative-text-color: #000000;
+$pink-text-color: #d22856;
+
+// переменные для фона
+$base-background: #ffffff;
+$secondary-background: #f2f2f2;
+$alternative-background: #1d2631;
+
+//переменные для адаптивности
+$tablet-widths: "(min-width: 700px)";
+$desktop-widths: "(min-width: 1200px)";  
+
+//переменные для ретины
+$retina: "(min-resolution: 144dpi), (min-resolution: 1.5dppx)";

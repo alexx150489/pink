@@ -1,0 +1,53 @@
+.header-promo__promo-block {
+	width: 320px;
+  min-height: 462px;
+  background:url(../img/iphone-5-in-hand-png.png) 0 148px no-repeat ,$alternative-background url(../img/back-mobile@1x.jpg) 0 0 no-repeat;
+}
+
+.header-promo__promo-info {
+  width: 320px;
+  min-height: 271px;
+  padding-top: 1px;
+  background-color: $alternative-background;
+}
+
+.header-promo__btn {
+  display: block;
+  width: 282px;
+  height: 55px;
+  margin: 0 auto;
+  margin-top: 28px;
+  margin-bottom: 32px;
+  font-family: $font-bold;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
+  color: $secondary-text-color;
+  box-sizing: border-box;
+  border: 3px solid $base-background;
+  border-radius: 25px;
+  background-color: $alternative-background;
+  cursor: pointer;
+}
+
+.header-promo__device-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 207px;
+  margin: 0 auto;
+  margin-bottom: 26px;
+}
+
+.header-promo__text {
+  width: 233px;
+  margin: 0 auto;
+  font-family: $font-light;
+  font-size: 14px;
+  line-height: 24px;
+  color: $secondary-text-color;
+  text-align: center;
+}
+
+
+

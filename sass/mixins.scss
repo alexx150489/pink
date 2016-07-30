@@ -1,0 +1,27 @@
+//Добавляет ::after к селектору
+@mixin clearfix() {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+//контейнер-центровщик
+@mixin container() {
+  width: 320px;
+  margin: 0 auto;
+
+  @media #{$tablet-widths} {      // при исп. селектора адаптивности  контейнер меняет ширину
+    width: 700px;
+  }
+
+  @media #{$desktop-widths} {     // при исп. селектора адаптивности  контейнер меняет ширину
+    width: 1200px;
+  }
+}
+
+//обводка блоков
+@mixin outline($width, $type, $color) {
+  outline: $width $type $color;
+}

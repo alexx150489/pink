@@ -9,3 +9,5 @@ Thumbs.db
 *.ai
 *.pdf
 css/*.css
+.docx
+*.docx

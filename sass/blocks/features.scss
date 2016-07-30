@@ -1,0 +1,33 @@
+.features {
+  width: 320px;
+  background-color: $base-background;
+}
+
+.features__mob-titles {
+  padding-top: 1px;
+}
+
+.features__mob-title {
+  font-family: $font-light;
+  font-size: 24px;
+  line-height: normal;
+  text-align: center;
+  color: $base-text-color;
+  font-weight: normal;
+}
+
+.features__mob-title:first-child {
+  margin-top: 45px;
+}
+
+.features__mob-title:last-child {
+  margin-top: 38px;
+}
+
+.features__full-title {
+  display: none;
+}
+
+.features__feature-items {
+  background-color: $secondary-background;
+}
