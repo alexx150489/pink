@@ -1,0 +1,110 @@
+.prices {
+  width: 320px;
+}
+
+.prices__prices-wrapper {
+  padding-top: 1px;
+  padding-bottom: 1px;
+  background-color: $secondary-background;
+}
+
+.prices__table {
+  border-collapse: collapse;
+  width: 320px;
+  margin-top: 66px;
+  margin-bottom: 40px;
+}
+
+.prices__table-data {
+  position: relative;
+  border: 2px solid #e5e5e5;
+  font-family: $font;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: $base-text-color;
+  padding: 12px 22px;
+  background-color: $base-background;
+}
+
+.prices__table-data--yes::after {
+  content: '';
+  position: absolute;
+  width: 31px;
+  height: 21px;
+  top: 20px;
+  right: 17px;
+  background: url(../img/yes.svg) 0 0 no-repeat;
+}
+
+.prices__table-data--no::after {
+  content: '';
+  position: absolute;
+  width: 27px;
+  height: 26px;
+  top: 15px;
+  right: 19px;
+  background: url(../img/no.svg) 0 0 no-repeat;
+}
+
+.prices__table-header {
+  position: relative;
+  padding: 18px 105px;
+  background-color: $alternative-background;
+  border-top: none;
+  border-bottom: none;
+}
+
+.prices__table-header::before {
+  position: absolute;
+  content: '';
+  width: 74px;
+  height: 73px;
+  top: 0;
+  left: 0;
+  background: url(../img/hit.png) 0 0 no-repeat;
+}
+
+
+.prices__table-header .name {
+  font-family: $font-bold;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: $secondary-text-color;
+}
+
+.prices__table-header .price {
+  font-family: $font-light;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: $secondary-text-color;
+}
+
+
+.prices__control-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0;
+  text-align: center;
+  margin-bottom: 47px;
+}
+
+.prices__control-btn {
+  display: inline-block;
+  vertical-align: middle;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #bec2c7;
+  margin-right: 19px;
+  cursor: pointer;
+}
+
+.prices__control-btn--active {
+  background-color: white;
+  border: 3px solid #283645;
+}

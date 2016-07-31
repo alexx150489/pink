@@ -5,6 +5,7 @@
 
 .features__mob-titles {
   padding-top: 1px;
+  margin-bottom: 65px;
 }
 
 .features__mob-title {
@@ -29,5 +30,49 @@
 }
 
 .features__feature-items {
+  position: relative;
+  padding-bottom: 1px;
+  padding-top: 1px;
   background-color: $secondary-background;
+}
+
+.features__feature-items::after {
+  position: absolute;
+  display: block;
+  left: 79px;
+  bottom: 0px;
+  content: '';
+  width: 157px;
+  height: 274px;
+  background: url(../img/Iphone3.png) 0 0 no-repeat;
+  background-size: 157px;
+}
+
+.features__item {
+  margin-bottom: 37px
+}
+
+.features__item:first-child {
+  margin-top: 52px;
+}
+
+.features__item:last-child {
+  margin-bottom: 324px;
+}
+
+.features__title {
+  font-family: $font-bold;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.features__text {
+  font-family: $font;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  padding: 0 20px;
+  color: $base-text-color;
 }

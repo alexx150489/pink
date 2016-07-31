@@ -1,0 +1,51 @@
+.footer-contacts {
+	width: 320px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+}
+
+.footer-contacts__contacts-title {
+	font-family: $font-light;
+	font-size: 24px;
+	line-height: normal;
+	color: $base-text-color;
+	font-weight: 300;
+	text-align: center;
+	margin-top: 47px;
+	margin-bottom: 43px;
+}
+
+.footer-contacts__tel {
+	margin-bottom: 26px;
+}
+
+.footer-contacts__email {
+	margin-bottom: 26px;
+}
+
+.footer-contacts__adress {
+	margin-bottom: 43px;
+}
+
+.footer-contacts__title {
+	font-family: $font-bold;
+	font-size: 18px;
+	line-height: normal;
+	color: $base-text-color;
+	font-weight: bold;
+	text-align: center;
+	font-weight: bold;
+}
+
+.footer-contacts__text {
+	font-family: $font-light;
+	font-size: 24px;
+	line-height: normal;
+	color: $pink-text-color;
+	font-weight: 300;
+	text-align: center;
+}
+
+.footer-contacts__adress .footer-contacts__text {
+	padding: 0 15px;
+}

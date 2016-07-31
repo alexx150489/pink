@@ -1,0 +1,27 @@
+.footer-map__map {
+	position: relative;
+	width: 320px;
+	min-height: 201px;
+	background: #f3f1ea url(../img/map-mob.jpg) 0 0 no-repeat;
+}
+
+.footer-map__map::after {
+	position: absolute;
+	content: '';
+	width: 36px;
+	height: 35px;
+	top: 114px;
+	left: 140px;
+	background: url(../img/map-marker.svg) 0 0 no-repeat;
+	
+}
+
+.footer-map__map::before {
+	position: absolute;
+	content: '';
+	width: 320px;
+	height: 123px;
+	top: 0px;
+	left: 1px;
+	background: url(../img/triangle-white-footer.svg) 0 0 no-repeat;
+}
