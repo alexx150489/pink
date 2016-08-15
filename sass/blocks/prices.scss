@@ -3,9 +3,23 @@
 }
 
 .prices__prices-wrapper {
+	position: relative;
   padding-top: 1px;
   padding-bottom: 1px;
   background-color: $secondary-background;
+}
+
+.prices__prices-wrapper {
+	&::before {
+		position: absolute;
+		display: block;
+		left: 13px;
+		top: -24px;
+		content: '';
+		width: 307px;
+		height: 24px;
+		background: url(../img/triangle-mob2.png) 0 0 no-repeat;
+	}
 }
 
 .prices__table {
@@ -13,6 +27,11 @@
   width: 320px;
   margin-top: 66px;
   margin-bottom: 40px;
+	background-color: $base-background;
+}
+
+.prices__table--full {
+	display: none;
 }
 
 .prices__table-data {
@@ -23,28 +42,32 @@
   line-height: 30px;
   text-transform: uppercase;
   color: $base-text-color;
-  padding: 12px 22px;
-  background-color: $base-background;
+  padding: 14px 22px;
 }
 
-.prices__table-data--yes::after {
-  content: '';
-  position: absolute;
-  width: 31px;
-  height: 21px;
-  top: 20px;
-  right: 17px;
-  background: url(../img/yes.svg) 0 0 no-repeat;
+.prices__table-data--yes {
+  &::after {
+    content: '';
+    position: absolute;
+    width: 31px;
+    height: 21px;
+    top: 20px;
+    right: 17px;
+    background: url(../img/icon-yes.svg) 0 0 no-repeat;
+  }
 }
 
-.prices__table-data--no::after {
-  content: '';
-  position: absolute;
-  width: 27px;
-  height: 26px;
-  top: 15px;
-  right: 19px;
-  background: url(../img/no.svg) 0 0 no-repeat;
+.prices__table-data--no {
+  &::before {
+    content: '';
+    position: absolute;
+    width: 27px;
+    height: 26px;
+    top: 15px;
+    right: 19px;
+    background: url(../img/icon-no.svg) 0 0 no-repeat;
+  }
+
 }
 
 .prices__table-header {
@@ -65,8 +88,7 @@
   background: url(../img/hit.png) 0 0 no-repeat;
 }
 
-
-.prices__table-header .name {
+.prices__title-name {
   font-family: $font-bold;
   font-size: 18px;
   line-height: 30px;
@@ -74,7 +96,7 @@
   color: $secondary-text-color;
 }
 
-.prices__table-header .price {
+.prices__title-price {
   font-family: $font-light;
   font-size: 24px;
   line-height: 30px;
@@ -82,7 +104,6 @@
   text-transform: uppercase;
   color: $secondary-text-color;
 }
-
 
 .prices__control-list {
   list-style-type: none;
@@ -102,9 +123,170 @@
   background-color: #bec2c7;
   margin-right: 19px;
   cursor: pointer;
+	&:last-child {
+		margin-right: 0;
+	}
 }
 
 .prices__control-btn--active {
   background-color: white;
   border: 3px solid #283645;
+}
+
+@media #{$tablet-widths} {
+	.prices {
+  	width: 700px;
+	}
+	
+	.prices__table {
+		display: none;
+	}
+	
+	.prices__controls {
+		display: none;
+	}
+	
+	.prices__table-header {
+		&::before {
+			display: none;
+		}
+	}
+	
+	.prices__hit {
+		&::after {
+			position: absolute;
+			content: '';
+			width: 74px;
+			height: 73px;
+			top: 0;
+			left: 0;
+			background: url(../img/hit.png) 0 0 no-repeat;
+			background-size: 57px 57px;
+		} 
+	}
+	
+	.prices__prices-wrapper {
+		display: flex;
+		justify-content: center;
+		padding-top: 1px;
+		padding-bottom: 1px;
+		&::before {
+			width: 697px;
+			height: 53px;
+	    left: 3px;
+      top: -53px;
+			background: url(../img/triangle-tablet2.png) 0 0 no-repeat;
+		}
+	}
+	
+	.prices__table--full {
+		display: block;
+		width: 620px;
+		background-color: $secondary-background;
+		margin-bottom: 68px;
+		margin-top: 36px;
+    margin-bottom: 91px;
+	}
+	
+	.prices__table-data--invisible {
+		visibility: hidden;
+	}
+		
+	.prices__table-data {
+    width: 166px;
+		line-height: 14px;
+		padding: 16px 0px;
+		padding-left: 17px;
+		box-sizing: border-box;
+		text-transform: none;
+		background-color: $base-background;
+	}
+  
+  .prices__table-data--yes {
+    &::after {
+      top: 14px;
+      right: 57px;
+    }
+  }
+    
+  .prices__table-data--no {
+    &::before  {
+     top: 9px;
+     right: 62px;
+    }
+   }
+  	
+	.prices__table-header {
+		padding: 8px 0;
+		background-color: #1d2631;
+	}
+	
+	.prices__title-name {
+		font-size: 16px;
+	}
+	
+	.prices__title-price {
+		font-size: 18px;
+	}
+}
+
+@media #{$desktop-widths} {
+	.prices {
+		width: 1200px;
+	}
+	
+	.prices__prices-wrapper {
+		&::before {
+			width: 1200px;
+			height: 81px;
+	    left: 0px;
+      top: -81px;
+			background: url(../img/triangle-desk2.png) 0 0 no-repeat;
+		}
+	}
+	
+	.prices__table--full {
+		width: 942px;
+		margin-top: 66px;
+	}
+	
+	.prices__table-data {
+		width: 241px;
+    padding: 24px 0px;
+    padding-left: 22px;
+    font-size: 18px;
+  }
+	
+	
+	.prices__table-header {
+		padding: 15px 0;
+	}
+	
+	.prices__title-name {
+		font-size: 18px;
+  }
+
+  .prices__title-price {
+		font-size: 24px;
+  }
+	
+	.prices__hit {
+		&::after {
+			background-size: 70px 70px;
+		} 
+	}
+	
+	.prices__table-data--yes {
+    &::after {
+     top: 20px;
+     right: 94px;
+    }
+  }
+    
+  .prices__table-data--no {
+    &::before  {
+			top: 20px;
+			right: 97px;
+    }
+  }
 }

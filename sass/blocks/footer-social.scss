@@ -1,0 +1,131 @@
+.footer-social {
+	display: none;
+}
+
+.footer-social__pink-logo--full {
+		display: none;
+	}
+
+@media #{$tablet-widths} {
+	.footer-social {
+		width: 700px;
+		display: flex;
+		justify-content: space-between;
+    margin-bottom: 37px;
+	}
+	
+	.footer-social__pink-logo--full {
+		display: none;
+	}
+	
+	.footer-social__logo {
+		width: 147px;
+		height: 40px;
+		padding-left: 41px;
+		background: url(../img/logotype-footer-tablet.svg) 0 0 no-repeat;
+	}
+	
+	.footer-social__button-list {
+		list-style-type: none;
+		font-size: 0;
+	}
+	
+	.footer-social__button {
+    position: relative;
+		display: inline-block;
+		vertical-align: top;
+		width: 49px;
+		height: 49px;
+		border: 3px solid #e9ebec;
+		border-radius: 50%;
+		box-sizing: border-box;
+		background-color: $base-background;
+		margin-right: 12px;
+	}
+  
+  .footer-social__link {
+    display: block;
+    width: 49px;
+		height: 49px;
+  }
+  
+   .footer-social__icon-twitter {
+    position: absolute;
+    fill: $pink-text-color;
+    width: 18px;
+    height: 14px;
+    top: 14px;
+    left: 12px;
+  }
+  
+  .footer-social__icon-facebook {
+    position: absolute;
+    fill: $pink-text-color;
+    width: 9px;
+    height: 18px;
+    top: 12px;
+    left: 17px;
+  }
+  
+  .footer-social__icon-youtube {
+    position: absolute;
+    fill: $pink-text-color;
+    width: 15px;
+    height: 13px;
+    top: 15px;
+    left: 16px;
+  }
+	
+	.footer-social__template-author {
+    position: relative;
+		font-family: $font;
+		font-size: 14px;
+		line-height: 18px;
+		color: $base-text-color;
+    align-self: center;
+	}
+  
+  .footer-social__template-author-text {
+    padding-right: 82px;
+  }
+    
+  .footer-social__logo-htmlacademy {
+    position: absolute;
+    width: 27px;
+    height: 34px;
+    top: -6px;
+    left: 101px;
+    fill: $pink-text-color;
+  }
+}
+
+@media #{$desktop-widths} {
+	.footer-social {
+		width: 1200px;
+		justify-content: center;
+	}
+	
+	.footer-social__pink-logo {
+		display: none;
+	}
+	
+	.footer-social__pink-logo--full {
+		display: block;
+	}
+	
+	.footer-social__template-author-text {
+		font-size: 18px;
+	}
+	
+	.footer-social__social-buttons {
+		margin: 0px 240px;
+	}
+	
+	.footer-social__yt {
+		margin-right: 0;
+ }
+	
+	.footer-social__logo-htmlacademy {
+		left: 135px;
+	}
+}

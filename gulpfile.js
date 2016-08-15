@@ -97,7 +97,6 @@ gulp.task("serve", ["style"], function() {
 });
 
 
-///Для одноразового пользования
 gulp.task("svgsprite", function() {
   return gulp.src("img/*.svg")
     .pipe(svgmin())

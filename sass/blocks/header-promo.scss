@@ -1,7 +1,7 @@
 .header-promo__promo-block {
 	width: 320px;
   min-height: 462px;
-  background:url(../img/iphone-5-in-hand-png.png) 0 148px no-repeat ,$alternative-background url(../img/back-mobile@1x.jpg) 0 0 no-repeat;
+  background: url(../img/iphone-5-in-hand-png.png) 0 176px no-repeat ,$alternative-background url(../img/back-mobile@1x.jpg) 0 0 no-repeat;
 }
 
 .header-promo__promo-info {
@@ -9,6 +9,10 @@
   min-height: 271px;
   padding-top: 1px;
   background-color: $alternative-background;
+}
+
+.header-promo__title {
+  display: none;
 }
 
 .header-promo__btn {
@@ -36,7 +40,7 @@
   align-items: center;
   width: 207px;
   margin: 0 auto;
-  margin-bottom: 26px;
+  margin-bottom: 21px;
 }
 
 .header-promo__text {
@@ -47,4 +51,86 @@
   line-height: 24px;
   color: $secondary-text-color;
   text-align: center;
+}
+
+
+@media #{$tablet-widths} {
+  
+  .header-promo {
+     position: relative;
+  }
+  
+  .header-promo__promo-block {
+    width: 700px;
+    min-height: 728px;
+    background: url(../img/iphone-5-in-hand-png-tab.png) 0 183px no-repeat ,$alternative-background url(../img/back-tablet@1x.jpg) 0 0 no-repeat;
+  }
+	
+	.header-promo__promo-info {
+    position: absolute;
+    width: 320px;
+    top: 199px;
+    left: 32px;
+    background-color: transparent;
+  }
+  
+  .header-promo__title {
+    display: block;
+    font-family: $font-light;
+    font-size: 40px;
+    line-height: 50px;
+    color: $secondary-text-color;
+    font-weight: 300;
+    text-align: center;
+    padding: 0 50px;
+  }
+  
+  
+  
+  .header-promo__btn {
+    width: 300px;
+		margin-bottom: 46px;
+    background-color: transparent;
+  }
+	
+	.header-promo__device-icons {
+		margin-bottom: 35px;
+	}
+	
+	.header-promo__text {
+		width: 320px;
+		font-size: 19px;
+    line-height: 24px;
+	}
+}
+
+@media #{$desktop-widths} {
+	
+	.header-promo__promo-block {
+    width: 1200px;
+    min-height: 854px;
+    background: url(../img/iphone-5-in-hand-png-desk.png) 148px 209px no-repeat ,$alternative-background url(../img/back-desktop@1x.jpg) 0 0 no-repeat;
+  }
+	
+	.header-promo__promo-info {
+    top: 214px;
+    left: 122px;
+  }
+	
+	.header-promo__title {
+    font-size: 50px;
+		padding: 0 36px;
+		line-height: 62px;
+	}
+	
+	.header-promo__btn {
+		margin-top: 48px;
+		font-size: 21px;
+		margin-bottom: 71px;
+  }
+	
+	.header-promo__device-icons {
+		margin-bottom: 51px;
+	}
+	
 }
