@@ -1,7 +1,37 @@
 .header-promo__promo-block {
+	position: relative;
 	width: 320px;
   min-height: 462px;
   background: url(../img/iphone-5-in-hand-png.png) 0 176px no-repeat ,$alternative-background url(../img/back-mobile@1x.jpg) 0 0 no-repeat;
+}
+
+.header-promo__toggle-block {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+	top: 3px;
+	left: 0;
+	width: 100%;
+	min-height: 66px;
+	background-color: rgba( $alternative-background, .5 );
+	&::before {
+		content: '';
+		width: 75px;
+		height: 22px;
+		margin-left: 20px;
+		background: url(../img/logo-pink-white-mobile.svg) 0 0 no-repeat;
+	}
+}
+
+.header-promo__burger-btn {
+	width: 50px;
+	height: 24px;
+	border: none;
+	margin-right: 20px;
+	padding: 0;
+	background: transparent url(../img/icon-menu-burger.svg) 0 0 no-repeat;
+	cursor: pointer;
 }
 
 .header-promo__promo-info {
@@ -66,10 +96,36 @@
     background: url(../img/iphone-5-in-hand-png-tab.png) 0 183px no-repeat ,$alternative-background url(../img/back-tablet@1x.jpg) 0 0 no-repeat;
   }
 	
+	.header-promo__toggle-block {
+		top: 0;
+		min-height: 108px;
+		&::before {
+			content: '';
+			width: 147px;
+			height: 40px;
+			margin-left: 40px;
+			background: url(../img/logo-pink-white-tablet.svg) 0 0 no-repeat;
+		}
+		&::after {
+			margin-right: 40px;
+		}
+	}
+
+	.header-promo__toggle-block-logo {
+		width: 147px;
+		height: 40px;
+		margin-left: 40px;
+		background: url(../img/logo-pink-white-tablet.svg) 0 0 no-repeat;
+  }
+
+	.header-promo__humburger {
+		margin-right: 40px;
+	}
+	
 	.header-promo__promo-info {
     position: absolute;
     width: 320px;
-    top: 199px;
+		top: 196px;
     left: 32px;
     background-color: transparent;
   }
@@ -84,9 +140,7 @@
     text-align: center;
     padding: 0 50px;
   }
-  
-  
-  
+    
   .header-promo__btn {
     width: 300px;
 		margin-bottom: 46px;
@@ -111,6 +165,10 @@
     min-height: 854px;
     background: url(../img/iphone-5-in-hand-png-desk.png) 148px 209px no-repeat ,$alternative-background url(../img/back-desktop@1x.jpg) 0 0 no-repeat;
   }
+	
+	.header-promo__toggle-block {
+		display: none;
+	}
 	
 	.header-promo__promo-info {
     top: 214px;

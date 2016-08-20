@@ -1,3 +1,121 @@
-.main-nav {
-	color: brown;
+.main-nav__menu {
+	list-style-type: none;
+}
+
+.main-nav__menu--js {
+	display: none;
+}
+
+.main-nav__menu--nojs {
+	display: block;
+}
+
+.main-nav__menu-item--logo {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+	width: 100%;
+	height: 69px;
+	background-color: $alternative-background;
+}
+
+.main-nav__pink-logo {
+	display: block;
+	width: 75px;
+	height: 22px;
+	margin-left: 20px;
+	background: url(../img/logo-pink-white-mobile.svg) 0 0 no-repeat;
+}
+
+.main-nav__close-btn {
+	display: block;
+	width: 24px;
+	height: 23px;
+	margin-right: 20px;
+	background: url(../img/icon-menu-cross.svg) 0 0 no-repeat;
+	cursor: pointer;
+}
+
+.main-nav__menu-link {
+	display: block;
+	font-family: $font-bold;
+	font-size: 18px;
+	line-height: 32px;
+	color: $secondary-text-color;
+	text-transform: uppercase;
+	text-align: center;
+	border-top: 1px solid #485461;
+	border-bottom: 1px solid #000000;
+	background-color: $alternative-background;
+	padding: 14px;
+}
+
+@media #{$tablet-widths} {
+	.main-nav {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 320px;
+		z-index: 99;
+		width: 700px;
+	}
+	.main-nav__menu-item--logo {
+		height: 110px;
+		}
+	
+	.main-nav__pink-logo {
+		width: 147px;
+		height: 40px;
+		margin-left: 40px;
+		background: url(../img/logo-pink-white-tablet.svg) 0 0 no-repeat;
+	}
+	
+	.main-nav__close-btn {
+		margin-right: 40px;
+	}
+}
+
+@media #{$desktop-widths} {
+	.main-nav {
+		width: 1200px;
+		display: block;
+		background-color: rgba( $alternative-background, .5 );
+	}
+	
+	.main-nav__menu {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+		min-height: 110px
+	}
+	
+	.main-nav__menu-item--logo {
+		display: block;
+		width: auto;
+		height: auto;
+		margin-bottom: 18px;
+		background-color: transparent;
+	}
+	
+	.main-nav__close-btn {
+		display: none;
+	}
+	
+	.main-nav__pink-logo {
+		background: url(../img/logo-pink-white-desktop.svg) 0 0 no-repeat;
+		
+	}
+	
+	.main-nav__menu-link  {
+		font-family: $font;
+		font-size: 18px;
+		line-height: 18px;
+		text-transform: none;
+		padding: 0;
+		border: none;
+		background-color: transparent;
+		
+	}
 }

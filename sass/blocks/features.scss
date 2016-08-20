@@ -260,8 +260,6 @@
 			background: url(../img/Iphone1.png) 0 0 no-repeat;
 			background-size: 186px;
 		}
-	}
-	.features__mood {
 		&::after {
 			content: '';
 			position: absolute;
@@ -273,7 +271,7 @@
 			background: url(../img/shadow-line.png) 0 0 no-repeat;
 		}
 	}
-	
+		
 	.features__world {
 		&::before {
 			content: '';
@@ -285,8 +283,6 @@
 			background: url(../img/Iphone2.png) 0 0 no-repeat;
 			background-size: 186px;
 		}
-	}
-	.features__wolrd {
 		&::after {
 			content: '';
 			position: absolute;
@@ -298,7 +294,7 @@
 			background: url(../img/shadow-line.png) 0 0 no-repeat;
 		}
 	}
-	
+		
 	.features__friends {
 		&::before {
 			content: '';
@@ -310,8 +306,6 @@
 			background: url(../img/Iphone3.png) 0 0 no-repeat;
 			background-size: 186px;
 		}
-	}
-	.features__friends {
 		&::after {
 			content: '';
 			position: absolute;

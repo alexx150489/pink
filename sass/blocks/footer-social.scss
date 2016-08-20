@@ -10,8 +10,12 @@
 	.footer-social {
 		width: 700px;
 		display: flex;
-		justify-content: space-between;
+		justify-content:space-between;
     margin-bottom: 37px;
+	}
+	
+	.footer-social__logo-wrapper {
+		margin-left: 38px;
 	}
 	
 	.footer-social__pink-logo--full {
@@ -21,10 +25,13 @@
 	.footer-social__logo {
 		width: 147px;
 		height: 40px;
-		padding-left: 41px;
-		background: url(../img/logotype-footer-tablet.svg) 0 0 no-repeat;
+		background: url(../img/logo-pink-blue-mobile.svg) 0 0 no-repeat;
 	}
 	
+	.footer-social__social-buttons {
+		margin: 0 59px 0 45px;
+	}
+		
 	.footer-social__button-list {
 		list-style-type: none;
 		font-size: 0;
@@ -42,10 +49,14 @@
 		background-color: $base-background;
 		margin-right: 12px;
 	}
+	
+	.footer-social__button:last-child {
+		margin-right:0;
+	}
   
   .footer-social__link {
     display: block;
-    width: 49px;
+		width: 49px;
 		height: 49px;
   }
   
@@ -82,7 +93,9 @@
 		font-size: 14px;
 		line-height: 18px;
 		color: $base-text-color;
-    align-self: center;
+		padding-top: 20px;
+		margin-right: 2px;
+    
 	}
   
   .footer-social__template-author-text {
@@ -93,8 +106,8 @@
     position: absolute;
     width: 27px;
     height: 34px;
-    top: -6px;
-    left: 101px;
+		top: 13px;
+		left: 95px;
     fill: $pink-text-color;
   }
 }
@@ -105,12 +118,11 @@
 		justify-content: center;
 	}
 	
-	.footer-social__pink-logo {
-		display: none;
-	}
-	
-	.footer-social__pink-logo--full {
+	.footer-social__logo {
 		display: block;
+		width: 147px;
+		height: 40px;
+		background: url(../img/logo-pink-blue-desktop.svg) 0 0 no-repeat;
 	}
 	
 	.footer-social__template-author-text {
@@ -118,14 +130,12 @@
 	}
 	
 	.footer-social__social-buttons {
-		margin: 0px 240px;
+		margin: 0 234px 0 230px;
 	}
 	
-	.footer-social__yt {
-		margin-right: 0;
- }
+	
 	
 	.footer-social__logo-htmlacademy {
-		left: 135px;
+		left: 123px;
 	}
 }
